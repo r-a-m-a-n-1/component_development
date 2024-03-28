@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  background-color: #2360af;
+  padding: px 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1000;
+
+}
+.nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-item{
+  font-size: 35px;
+ margin-right: 25px;
+ 
+
+}
+.nav-item:last-child{
+  margin-right: 0;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover{
+  text-decoration: underline;
+  text-decoration-color:red;
+  
+}
+span{
+  color: red;
+
+}
+
+
+.body{
+  margin: 0;
+  padding:0;
+  height: 100vh;
+  
+  background-image: url('home.avif');
+  background-repeat: no-repeat;
+  background-size:  cover;
+  
+}
+
+.heading{
+  background-color: #2360af;
+  color: white;
+  text-align: center;
+  font-size: 60px
+
+}
+.logo{
+  font-size: 50px;
+  text-align: center;
+  font-weight:bold;
+  font-style: italic;
+  color: rgb(93, 16, 16);
+  display: block;
+margin-right: 500px;
+}
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('about-img.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  overflow-y:auto;
+  width: 90%;
+  max-width: 400px;
+  height: 300px;
+  background-color:white;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  transition:box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+   
+}
+
+.about-card:hover{
+  box-shadow: 0 0 30px blue;
+  transform: translateY(-20px);
+}
+.head{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.para{
+  margin-bottom:20px;
+
+}
+.wel{
+  font-size: 150%;
+  padding-top:300px;
+  padding-left: 150px;
+}
+
+.container{
+  width: 100wh;
+  height: 100vh;
+  background-image: url('fm.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.personal{
+  font-size: 60px;
+  align-items: center;
+  margin-left: 580px;
+  
+
+}
+
+.form-card{
+  width: 550px;
+  height:650px;
+  background-color: rgb(9, 68, 68,0.7);
+  margin-left: 500px;
+  margin-bottom: 50px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  
+  .nav-item {
+    margin: 0;
+    margin-right: 0;
+  }
+}
